@@ -1,0 +1,63 @@
+.topbar-container {
+  width: 100%;
+  background: #004b8d;
+  padding: 14px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.topbar-logo {
+  width: 48px;
+  border-radius: 4px;
+}
+
+.topbar-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-right: 40px; /* <-- Safe spacing to keep Logout inside */
+
+}
+
+.role-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.logout-btn {
+  padding: 8px 20px;
+  background: #dc3545;
+  border: none;
+  border-radius: 50px;   /* pill shaped modern button */
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: 0.25s ease-in-out;
+}
+
+.logout-btn:hover {
+  background: #b02a37;
+}
+

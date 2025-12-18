@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  background: #f5f8ff;
+}
+
+/* REMOVE global page-container styling */
+/* REMOVE .page-content styling */
+
+.info-box {
+  background: #f7faff;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #004a99;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+}
+
+th {
+  background: #003d80;
+  color: white;
+  padding: 14px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background: #eaf3ff;
+}
+
+/* Global fix for sidebar + topbar overlap on all non-admin pages */
+.content-area {
+  margin-left: 230px !important; /* Space for sidebar */
+}
+
+.page-content {
+  margin-top: 90px !important; /* Space for topbar */
+  padding: 30px 40px;
+  min-height: 100vh;
+  background: #F7F9FC;
+}

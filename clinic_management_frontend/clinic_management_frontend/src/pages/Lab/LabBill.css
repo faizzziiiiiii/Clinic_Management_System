@@ -1,0 +1,86 @@
+/* src/pages/Lab/LabBill.css */
+
+.bill-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.bill-box {
+  background: white;
+  width: 800px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.bill-logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.bill-title {
+  text-align: center;
+  font-size: 26px;
+  color: #0a3d62;
+  font-weight: bold;
+}
+
+.bill-subtitle {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.bill-table {
+  width: 100%;
+  margin-bottom: 25px;
+  border-collapse: collapse;
+}
+
+.bill-table td {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.bill-table td:first-child {
+  font-weight: 600;
+}
+
+.bill-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.print-btn {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.close-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Print Formatting */
+@media print {
+  .print-btn, .close-btn {
+    display: none !important;
+  }
+
+  .bill-box {
+    box-shadow: none;
+    border: none;
+  }
+}

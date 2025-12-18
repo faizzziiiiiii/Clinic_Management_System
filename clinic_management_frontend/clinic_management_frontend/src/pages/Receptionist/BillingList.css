@@ -1,0 +1,34 @@
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bill-table th,
+.bill-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.bill-table th {
+  background: #024a86;
+  color: white;
+  font-size: 15px;
+}
+
+.view-btn {
+  background: #0055a5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  background: #003f7d;
+}

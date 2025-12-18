@@ -1,0 +1,184 @@
+.report-container {
+  background: white;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.hospital-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.report-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.info-section p {
+  margin: 4px 0;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.report-table th,
+.report-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.status.normal {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.status.high {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.status.low {
+  background-color: #ffc107;
+  color: #000;
+}
+
+@media print {
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    margin: 0;
+    background: white;
+  }
+
+  .sidebar,
+  .topbar-container,
+  .btn-primary,
+  .print-btn-area {
+    display: none !important;
+  }
+
+  .report-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: none !important;
+    border-radius: 0;
+  }
+
+  table.styled-table th {
+    background-color: #003f7d !important; /* Keep Blue Header */
+    color: white !important;
+  }
+
+  .status-badge.status-low {
+    background-color: #ffcc00 !important;
+    color: black !important;
+  }
+
+  .status-badge.status-high {
+    background-color: #e63946 !important;
+    color: white !important;
+  }
+
+  .status-badge.status-normal {
+    background-color: #2eb82e !important;
+    color: white !important;
+  }
+}
+
+
+.status-badge {
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Normal = GREEN */
+.status-normal {
+  background-color: #28a745;
+  color: white;
+}
+
+/* High = RED */
+.status-high {
+  background-color: #d9534f;
+  color: white;
+}
+
+/* Low = ORANGE/YELLOW */
+.status-low {
+  background-color: #f0ad4e;
+  color: white;
+}
+.report-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hospital-logo {
+  width: 70px;
+  margin-bottom: 8px;
+}
+
+.hospital-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #004c87;
+  margin: 0;
+}
+
+.report-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.report-divider {
+  margin: 12px 0 16px 0;
+  border-top: 2px solid #000;
+}
+
+
+/* ---- PRINT SINGLE PAGE FIX ---- */
+@media print {
+  /* Completely remove sidebar + top bar influence */
+  .main-container {
+    display: block !important;
+  }
+
+  .sidebar,
+  .topbar-container {
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important;
+  }
+
+  .content {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Prevent large white/blue box */
+  #report-content {
+    background: white !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  /* Remove any unintended leftover block container below */
+  .content > div:last-child {
+    display: none !important;
+  }
+}
